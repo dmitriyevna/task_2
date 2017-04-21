@@ -1,0 +1,21 @@
+input[type="search"]
+	display: inline-block
+	border: 1px solid $grey-darken
+	+font($font-family_light, $links_font-size, $text_color, 1rem)
+	text-transform: uppercase
+	width: 323px
+	padding: 6px 32px 6px 13px
+	+border-radius(4px)
+	+media_query($screen_md)
+		margin: auto
+		width: 100%
+.search
+	display: block
+	position: relative
+	&:before
+		position: absolute
+		color: $color_blue
+		right: 10px
+		top: 5px
+    	
+    	

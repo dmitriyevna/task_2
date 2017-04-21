@@ -1,0 +1,25 @@
+.links__item
+	padding: 7px 16px
+	+border-radius
+	+font($font-family_light, $links_font-size, $text_color, 1rem)
+	text-transform: uppercase
+	letter-spacing: 1px
+	&:hover,
+	&.is-active
+		background-color: $grey-darken
+		text-decoration: none
+.links__item_size-smaller
+	padding-left: 8px
+	padding-right: 8px
+.links__languages
+	+media_query($screen_md)
+		padding: 20px
+		text-align: center
+.links__menu
+	.links__item
+		+media_query($screen_md)
+			display: block
+			text-align: center
+.links__know-more
+	& > span
+		color: $color_accent 

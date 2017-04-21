@@ -1,0 +1,58 @@
+.accordion__radio
+	display: none
+.accordion__item
+	display: block
+	border: 1px solid $grey-darken
+	padding: 22px 30px
+	+border-radius
+	border-bottom-width: 0px
+	cursor: pointer
+	&:last-child
+		border-bottom-width: 1px
+	&:hover
+		background-color: $grey-lighten
+.accordion__opening-item
+	overflow: hidden
+	padding: 0
+	height: 0px
+	+transition(padding, linear, 0.3s)
+.accordion__radio:checked
+	.accordion__item
+		cursor: pointer
+		.accordion__title
+			color: $color_blue
+			span
+				display: inline
+		.accordion__opening-item
+			padding: 0
+			height: 0
+	.accordion__title
+		display: none
+		
+	& + .accordion__item 
+			cursor: default
+			.accordion__title
+				color: $text_color
+				span
+					display: none
+			.accordion__opening-item
+				padding: 30px 33px
+				height: 100%
+				+transition(all, linear, 0.5s)
+							
+.accordion__useful-links
+	display: block
+	line-height: 30px
+.accordion__title_size-s
+	margin-bottom: 15px	
+.accordion__text
+	font-size: $font-size_m
+	max-width: 1145px	
+.accordion__title
+	overflow: hidden
+	& > span
+		float: right
+
+
+
+

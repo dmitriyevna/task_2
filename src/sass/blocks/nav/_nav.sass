@@ -1,0 +1,26 @@
+.nav
+	padding: 20px 0px
+.nav__item
+	position: relative
+	+font($font-family_light, $nav_font-size, $color_blue, 1rem)
+	margin: 0 15px
+	&:last-child
+		margin-right: 0px
+	&:hover
+		color: $text_color
+		text-decoration: none
+	&:after
+		+pseudo-elem
+		width: 100%
+		height: 1px
+		margin: auto
+		left: 0
+		bottom: -8px
+		background-color: $color_accent
+		visibility: hidden
+	&:hover:after
+		visibility: visible	
+	+media_query($screen_md)
+		display: block
+		margin-bottom: 20px
+		text-align: center
